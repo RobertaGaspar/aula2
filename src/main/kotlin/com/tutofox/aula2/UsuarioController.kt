@@ -12,7 +12,8 @@ class UsuarioController {
     var usuarioAula1: UsuarioAula1? = null
 
     @GetMapping
-    fun retornaUsuario(): UsuarioResponse? {
-        return usuarioAula1!!.retornaUsuario<UsuarioResponse>()
+    fun retornaUsuario(): List<UsuarioResponse> {
+        return usuarioAula1!!.retornaUsuario()
     }
+
 }
